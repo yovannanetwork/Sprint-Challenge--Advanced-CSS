@@ -1,1 +1,20 @@
 // Navigation code here
+@import 'navigation.less';
+.navigation{
+    text-align: center;
+    background-color: @nav-bg;
+    border-bottom: 2px solid @nav-border;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 1px 3px 5px @nav-border;
+    h1{
+        .h1-title(4rem, 15px);
+    }
+    li{
+        .display(10px 20px);
+        a{
+            .a-link(1.6rem);
+        }
+    }
+}

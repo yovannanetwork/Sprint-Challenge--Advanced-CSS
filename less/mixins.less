@@ -1,1 +1,27 @@
 // Mixins Here
+//@import 'navigation.less';
+.display(@padding){
+    display: inline-block;
+    padding: @padding;
+}
+.a-link(@fontSize){
+    text-decoration: none;
+    font-size: @fontSize;
+    color: @nav-font;
+    font-weight: 600;
+}
+.h1-title(@fontTitle, @padding){
+    font-size: @fontTitle;
+    color: @header-font-color;
+    padding: @padding;
+}
+//mixin for button
+
+.button(){
+    background-color: @btn-bg-color;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100px;
+    font-size: 2rem;
+    color: @porcelain;
+}
