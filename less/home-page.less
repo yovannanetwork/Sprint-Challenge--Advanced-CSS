@@ -1,5 +1,5 @@
 // Home Content
-
+@import 'mixins.less';
 .home {
 
   .intro {
@@ -11,6 +11,11 @@
     p {
       padding:0 15px;
     }
+      //MY CODE
+      img{
+          margin-top:  11rem;
+          border-radius: 5px;
+      }
   
   }
 
@@ -24,7 +29,17 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+        @media @phone{
+           &:nth-child(2){
+             display: none;
+         }
+            &:nth-child(3){
+                display: none;
+            }
+            width: 100%;
+      }
     }
+     
   }
 
   .visit-planets {
@@ -58,7 +73,21 @@
       }
 
       .btn {
+          .button(10px, 5px);
+          &:hover{
+              background-color: @porcelain;
+              color: @btn-bg-color;
+              
+          }
+          @media @phone{
+             width: 100%;
+              text-align: center;
+              padding: 20px 0;
+        }
       }
+    @media @phone{
+         width: 100%;
+        }//media query .walk-text
     }
 
     .walk-img {
@@ -70,6 +99,14 @@
         height: auto;
         border-radius: 10px;
       }
+        @media @phone{
+         width: 100%;
+            margin-left: 0;
     }
+    }
+      @media @phone{
+          flex-wrap: wrap-reverse;
+          padding: 12px;
+    }//media query .walk
   }
 }// home

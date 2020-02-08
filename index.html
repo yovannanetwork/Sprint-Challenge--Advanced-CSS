@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <title>SpaceWalkers</title>
 
   <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
@@ -17,11 +17,26 @@
 <body>
 
  <!-- navigation code here -->
+  <div class="navigation">
+      <div class="container">
+          <nav>
+          <h1>SpaceWalkers</h1>
+          <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#blog">Blog</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#sign">Sign UP</a></li>
+          </ul>
+      </nav>
+      </div>
+  </div>
 
   <div class="container home">
 
     <header class="intro">
        <!-- image code here -->
+       <img src="img/main-header.png" alt="main-img">
 
       <h2>Lift Off</h2>
     
@@ -61,6 +76,22 @@
       </div>
 
     </section>
+    <div class="contact">
+        <form action="#" method="post">
+          <div>
+            <h3>Subscribe</h3>
+				<div class="input">
+				     <input type="text" name="name" placeholder="Name" />
+				</div>
+				<div class="input">
+				    <input type="text" name="email" placeholder="Email" />
+                </div>
+				<div class="submit">
+				    <input type="submit" value="Send Message"/>
+				</div>
+           </div>
+        </form>
+    </div>
 
     <footer>
       <p>Copyright SpaceWalkers 2018</p>

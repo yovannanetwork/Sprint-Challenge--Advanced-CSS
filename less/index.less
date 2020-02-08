@@ -1,4 +1,30 @@
 // Import your less files here:
+@import 'navigation.less';
+@import 'variables.less';
+@import 'mixins.less';
+@import 'reset.less';
+@import 'global.less';
+@import 'footer.less';
+@import 'home-page.less';
+
+.contact{
+    text-align: center;
+    input{
+        margin: 10px 0;
+        width: 50%;
+        padding: 10px;
+        @media @phone{
+            width: 100%;
+        }
+    }
+    input[type='submit']{
+        .button(10px, 5px);
+        width: 50%;
+        @media @phone{
+            width: 100%;
+        }
+    }
+}
 
 
 
