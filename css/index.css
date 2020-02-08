@@ -264,6 +264,10 @@ footer {
   font-size: 2rem;
   color: #F6F7F8;
 }
+.home .walk .walk-text .btn:hover {
+  background-color: #F6F7F8;
+  color: #22283A;
+}
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
     width: 100%;
@@ -295,5 +299,32 @@ footer {
   .home .walk {
     flex-wrap: wrap-reverse;
     padding: 12px;
+  }
+}
+.contact {
+  text-align: center;
+}
+.contact input {
+  margin: 10px 0;
+  width: 50%;
+  padding: 10px;
+}
+@media (max-width: 500px) {
+  .contact input {
+    width: 100%;
+  }
+}
+.contact input[type='submit'] {
+  background-color: #22283A;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100px;
+  font-size: 2rem;
+  color: #F6F7F8;
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .contact input[type='submit'] {
+    width: 100%;
   }
 }

@@ -73,7 +73,12 @@
       }
 
       .btn {
-          .button();
+          .button(10px, 5px);
+          &:hover{
+              background-color: @porcelain;
+              color: @btn-bg-color;
+              
+          }
           @media @phone{
              width: 100%;
               text-align: center;
